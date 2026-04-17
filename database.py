@@ -1,9 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-#postgresql://todo_application_database_czru_user:Vr8t9yZ0ilriQXyUdsIKF5tPKP19ZUtA@dpg-d7ge43egvqtc738u3apg-a/todo_application_database_czru' # 
-SQLALCHEMY_DATABASE_URL = 'sqlite:///./todosapp.db' #'mysql+pymysql://root:123456789@127.0.0.1:3306/TodoApplicationDatabase'#'postgresql://postgres:123456@localhost/TodoApplicationDatabase'#'sqlite:///./todosapp.db' # db path in this application
+#Live -  postgresql://todo_application_database_czru_user:Vr8t9yZ0ilriQXyUdsIKF5tPKP19ZUtA@dpg-d7ge43egvqtc738u3apg-a/todo_application_database_czru' # 
+#Local - 'postgresql://postgres:123456@localhost/TodoApplicationDatabase', 'sqlite:///./todosapp.db' #'mysql+pymysql://root:123456789@127.0.0.1:3306/TodoApplicationDatabase'
 
+SQLALCHEMY_DATABASE_URL = 'postgresql://todo_application_database_czru_user:Vr8t9yZ0ilriQXyUdsIKF5tPKP19ZUtA@dpg-d7ge43egvqtc738u3apg-a/todo_application_database_czru'
+# #'
 # engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={'check_same_thread': False})
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
